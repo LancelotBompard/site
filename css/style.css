@@ -5,7 +5,9 @@
 }
 
 #container {
-    width: auto;
+    width: 100%;
+    /*max-width: 100%;*/
+    min-width: 100%;
     margin: auto;
 }
 
@@ -33,31 +35,38 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('../font/raleway-medium-webfont.woff2') format('woff2'),
+    url('../font/raleway-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .ulNoPuce {
     list-style: none;
 }
 
 div#first-container {
-    /*background: url("../img/filter-first.png"), url("../img/background-first.jpg");*/
-    /*background-position: center, center;*/
-    /*background-size: 100%, 100%;*/
-    /*background-repeat: no-repeat, no-repeat;*/
-    /*height: 650px;*/
+    background: url("../img/filter-first.png"), url("../img/background-first.jpg");
+    background-position: center, center;
+    background-size: 100%, 100%;
+    background-repeat: no-repeat, no-repeat;
+    height: 650px;
 }
 
 header {
     padding-top: 2%;
 }
 
-header p {
-    color: #0090ff;
-    margin-left: 3%;
-    font-size: 44px;
-    font-family: living_hellregular;
+header img {
+    cursor: pointer;
+    max-width: 45%;
 }
 
 header ul li {
     margin: 0 10px 0 10px;
+    padding: 5px 0 0 12px;
 }
 
 header ul li a {
@@ -76,45 +85,141 @@ div#information {
 }
 
 div#information ul.reseau-sociau{
-    margin-top: 9%;
+    margin-top: 7%;
     margin-left: 2%;
 }
 
 div#information ul.reseau-sociau li img {
-    width: 26px;
+    cursor: pointer;
+    width: 24px;
     margin: 10px 0 10px 0;
     color: #0090ff;
 }
 
-div#information ul.key-word li {
+div#information p.key-word{
     color: #0090ff;
-    font-size: 34px;
+    font-size: 32px;
     font-family: ralewaysemibold;
     text-transform: uppercase;
     font-weight: normal;
 }
 
-div#slogan p {
+div#slogan p.phrase {
     color: #0090ff;
     font-size: 20px;
 }
 
 div#slogan button {
+    cursor: pointer;
     width: 88%;
     height: 50px;
     margin-top: 6%;
     font-size: 14px;
-    font-family: ralewayregular;
+    font-family: ralewaymedium;
     border: none;
-    background: #0090ff;
+    background: linear-gradient(60deg, #0090ff, #00aeff);
     color: #ffffff;
     box-shadow: 15px 0px 45px -12px #000000;
 }
 
-#slogan {
-    /*background-color: orange;*/
+div#second-container{
+    background: #92c0e7;
+    color: #ffffff;
+    height: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#information {
-    /*background: red;*/
+div#second-container p{
+    width: 60%;
+    font-size: 20px;
+    font-family: ralewayregular;
+}
+
+div#third-container{
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    height: 1880px;
+}
+
+div#third-container div:first-child img{
+    min-width: 25%;
+    max-width: 30%;
+    max-height: 22%;
+    margin-top: 100px;
+}
+
+div#third-container div ul{
+    text-align: center;
+    padding-top: 180px;
+}
+
+div#third-container div ul li{
+    padding-bottom: 12%;
+}
+
+div#third-container div ul li p:first-child{
+    font-family: ralewaymedium;
+    font-size: 20px;
+    margin-bottom: -8px;
+}
+
+div#third-container div ul li p:last-child{
+    font-family: ralewayregular;
+    font-size: 11px;
+}
+
+div#third-container div div h1{
+    font-family: ralewaysemibold;
+    font-size: 34px;
+    padding-top: 150px;
+}
+
+div#third-container div div p{
+    font-family: ralewayregular;
+    font-size: 16px;
+    width: 80%;
+}
+
+div#third-container div div button{
+    cursor: pointer;
+    width: 50%;
+    height: 50px;
+    margin-top: 6%;
+    font-size: 16px;
+    font-family: ralewaymedium;
+    border: none;
+    background: linear-gradient(60deg, #0090ff, #00aeff);
+    color: #ffffff;
+    box-shadow: 15px 0px 70px -19px #000000;
+}
+
+div#blog{
+    /*display: flex;*/
+    /*justify-items: center;*/
+}
+
+div#blog article img{
+    min-width: 34%;
+    max-height: 22%;
+    margin-top: 100px;
+}
+
+div#blog article button{
+    cursor: pointer;
+    width: 60%;
+    height: 50px;
+    margin-top: 6%;
+    font-size: 16px;
+    font-family: ralewaymedium;
+    border: none;
+    background: linear-gradient(60deg, #0090ff, #00aeff);
+    color: #ffffff;
+    box-shadow: 15px 0px 70px -19px #000000;
+}
+
+div#blog article p{
+    margin-top: 8%;
 }
