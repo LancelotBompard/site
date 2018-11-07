@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: auto;
+    margin: auto;
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../font/raleway-regular-webfont.woff2') format('woff2'),
+    url('../font/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('../font/raleway-semibold-webfont.woff2') format('woff2'),
+    url('../font/raleway-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'living_hellregular';
+    src: url('../font/living_hell-webfont.woff2') format('woff2'),
+    url('../font/living_hell-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ulNoPuce {
+    list-style: none;
+}
+
+div#first-container {
+    /*background: url("../img/filter-first.png"), url("../img/background-first.jpg");*/
+    /*background-position: center, center;*/
+    /*background-size: 100%, 100%;*/
+    /*background-repeat: no-repeat, no-repeat;*/
+    /*height: 650px;*/
+}
+
+header {
+    padding-top: 2%;
+}
+
+header p {
+    color: #0090ff;
+    margin-left: 3%;
+    font-size: 44px;
+    font-family: living_hellregular;
+}
+
+header ul li {
+    margin: 0 10px 0 10px;
+}
+
+header ul li a {
+    color: #000000;
+    font-size: 16px;
+    font-family: ralewayregular;
+}
+
+header ul li a:hover {
+    color: #0090ff;
+    text-decoration: none;
+}
+
+div#information {
+    margin-top: 7%;
+}
+
+div#information ul.reseau-sociau{
+    margin-top: 9%;
+    margin-left: 2%;
+}
+
+div#information ul.reseau-sociau li img {
+    width: 26px;
+    margin: 10px 0 10px 0;
+    color: #0090ff;
+}
+
+div#information ul.key-word li {
+    color: #0090ff;
+    font-size: 34px;
+    font-family: ralewaysemibold;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+div#slogan p {
+    color: #0090ff;
+    font-size: 20px;
+}
+
+div#slogan button {
+    width: 88%;
+    height: 50px;
+    margin-top: 6%;
+    font-size: 14px;
+    font-family: ralewayregular;
+    border: none;
+    background: #0090ff;
+    color: #ffffff;
+    box-shadow: 15px 0px 45px -12px #000000;
+}
+
+#slogan {
+    /*background-color: orange;*/
+}
+
+#information {
+    /*background: red;*/
+}
